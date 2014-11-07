@@ -1,0 +1,52 @@
+/* =========================================
+  VARIABLES
+======================================== */
+
+/* =========================================
+  MIXINS
+======================================== */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin button {
+	cursor:pointer;
+}
+
+@mixin centerCenter {
+  position:absolute;
+  left:50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin vertCenter {
+  position:absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horzCenter {
+  position:absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+// to use: @include centerCenter; for example
+
+
+/* =========================================
+  FONTS
+======================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
